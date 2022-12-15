@@ -5,3 +5,108 @@ html { box-sizing: border-box;}
 *, *:before, *:after {box-sizing: inherit}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+/* wrapper styles */
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* general styles */
+
+body,
+nav,
+ul,
+li,
+header,
+h1,
+h2,
+h3,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+nav,
+button,
+.readMore {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p,
+label,
+input[type=text] {
+    font-family: 'Catamaran', sans-serif;
+}
+
+h1 {
+    font-size: 14.64rem;
+    color: #e75605;
+    line-height: 12rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+    font-weight: bold;
+    color: #e75605;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    /* color: #FFF; */
+}
+
+p,
+nav,
+label,
+input[type=text] {
+    font-size: 2rem;
+    font-weight: regular;
+    color: #1f2022;
+    line-height: 2.9rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+.readMore {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2022;
+    line-height: 2.9rem;
+    background-color: #fff;
+    border: #e75605 solid 2px;
+    padding: 3.5px 15px;
+}
+
+.socials {
+    font-size: 2rem;
+    color: #e75605;
+}
+
+.icons {
+    font-size: 6rem;
+    /* color: #fff; */
+}
+
+/* nav styles */
