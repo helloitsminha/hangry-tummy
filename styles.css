@@ -14,7 +14,7 @@ html { box-sizing: border-box;}
     margin: 0 auto;
 }
 
-/* general styles */
+/* general & typographic styles */
 
 body,
 nav,
@@ -31,7 +31,6 @@ img {
 
 ul {
     list-style: none;
-    display: flex;
     margin: 0;
     padding: 0;
 }
@@ -88,6 +87,12 @@ a {
     text-decoration: none;
 }
 
+img,
+.headerImgContainer {
+    display: block;
+    width: 100%;
+}
+
 button,
 .readMore {
     font-size: 2rem;
@@ -100,7 +105,7 @@ button,
 }
 
 .socials {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #e75605;
 }
 
@@ -110,3 +115,71 @@ button,
 }
 
 /* nav styles */
+
+nav {
+    background-color: #fff;
+    line-height: 29px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: -70px;
+}
+
+nav li {
+    padding: 0 35px
+}
+
+nav a {
+    color: #1f2022;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #e75605;
+}
+
+/* header styles */
+
+header  {
+    background-color: #fff;
+    height: 100vh;
+}
+
+.headerFlexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerImgContainer,
+.headerContentContainer {
+    width: 50%;
+    height: 100%;
+}
+
+.headerContentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.headerTextContainer {
+    width: 80%;
+}
+
+.socialsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.socialsContainer i {
+    padding: 0 0 20px 0;
+}
