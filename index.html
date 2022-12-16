@@ -143,36 +143,38 @@
         <footer>
             <div class="wrapper">
                 <!-- footer nav -->
-                <nav class="footerNav">
-                    <ul>
-                        <li><a href="./index.html">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </nav>
-                <!-- contact -->
-                <div class="contactContainer">
-                    <h2>CONTACT</h2>
-                    <p>info@email.com | 123-456-7890 <br>
-                    123 some road, Toronto, ON <br>
-                    A5A 5A5, Canada</p>
-                </div><!-- end of contact container -->
-                <!-- newsletter form -->
-                <div class="newsletterContainer">
-                    <h2>STAY UPDATED</h2>
-                    <form action="submit">
-                        <label for="email">Subscribe to our newsletter to stay updated.</label><br>
-                        <input type="text" name="email" placeholder="email address" id="email">
-                        <button type="submit">SUBSCRIBE</button>
-                    </form>
-                </div><!-- end of newsletter container -->
-                
-                <!-- copyright -->
-                <div class="copyright">
-                    <p id="copyright">Copyright © 2019 HackerYou</p>
-                </div>
+                <div class="navContainer">
+                    <nav class="footerNav">
+                        <ul>
+                            <li><a href="./index.html">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div> <!-- end of .navContainer -->
+                <div class="footerContent">
+                    <div class="contactContainer">
+                        <h2>CONTACT</h2>
+                        <p>info@email.com | 123-456-7890 <br>
+                        123 some road, Toronto, ON <br>
+                        A5A 5A5, Canada</p>
+                    </div><!-- end of .contactContainer -->
+                    <div class="subscribeContainer">
+                        <h2>STAY UPDATED</h2>
+                        <form action="submit">
+                            <label for="email">Subscribe to our newsletter to stay updated.</label>
+                            <div class="inputContainer">
+                                <input type="text" name="email" placeholder="email address" id="email">
+                                <button type="submit">SUBSCRIBE</button>
+                            </div> <!-- end of .inputContainer -->
+                        </form>
+                    </div><!-- end of .subscribeContainer -->
+                </div><!-- end of .footerContent -->
             </div><!-- end of footer wrapper -->
+            <div class="copyright">
+                <p id="copyright">Copyright © 2019 HackerYou</p>
+            </div><!-- end of .copyright -->
         </footer>
     </main>
 </body>

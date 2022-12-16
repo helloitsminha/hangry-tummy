@@ -21,8 +21,7 @@ html {
 h2,
 ul,
 li,
-a,
-input {
+a {
     padding: 0;
     margin: 0;
 }
@@ -115,7 +114,6 @@ button,
 nav {
     background-color: #fff;
     line-height: 29px;
-    z-index: 10;
 }
 
 nav ul {
@@ -123,6 +121,9 @@ nav ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.mainNav ul {
     margin-top: 50px;
     margin-bottom: -70px;
 }
@@ -278,4 +279,66 @@ header img {
 
 .gallery li {
     flex-basis: 32%;
+}
+
+/* FOOTER STYLES */
+footer {
+    background-color: #f4f4f4;
+}
+
+footer .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.contactContainer,
+.subscribeContainer {
+    flex-basis: 50%;
+}
+
+/* FOOTER NAV STYLES */
+footer nav {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+/* SUBSCRIBE STYLES */
+form {
+    margin: 20px 0;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+input {
+    border: #fff solid 3px;
+    padding-left: 30px;
+    width: calc(100% - 155.25px);
+}
+
+
+
+
+
+/* COPYRIGHT STYLES */
+.copyright {
+    background-color: #1f2022;
+    max-width: none;
+    width: 100%;
+    padding: 1px 0;
+}
+
+.copyright p {
+    color: #f4f4f4;
+    text-align: center;
+    margin: 0;
 }
