@@ -377,6 +377,35 @@ header img {
     flex-basis: 32%;
 }
 
+/* for tablets */
+
+@media (max-width: 768px) {
+    .gallery {
+        padding: 50px 0;
+    }
+    .gallery .wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .gallery ul {
+        width: 90%;
+        margin: auto;
+    }
+
+    .gallery h2 {
+        margin-bottom: 50px;
+    }
+
+    .gallery .one,
+    .gallery .two {
+        flex-basis: 49%;
+    }
+    .gallery .three {
+        flex-basis: 0%;
+    }
+}
+
 /* FOOTER STYLES */
 footer {
     background-color: #f4f4f4;
