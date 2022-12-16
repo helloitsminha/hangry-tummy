@@ -7,38 +7,36 @@ html { box-sizing: border-box;}
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 
-/* wrapper styles */
-.wrapper {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-/* general & typographic styles */
-
-body,
-nav,
-ul,
-li,
-header,
-h1,
-h2,
-h3,
-img {
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
+/* general styles*/
 
 html {
     font-size: 62.5%;
 }
+
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+ul,
+li,
+a,
+input {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* typographic & button/anchor styles */
 
 h1,
 h2,
@@ -83,15 +81,12 @@ input[type=text] {
     line-height: 2.9rem;
 }
 
+
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
-img,
-.headerImgContainer {
-    display: block;
-    width: 100%;
-}
 
 button,
 .readMore {
@@ -102,6 +97,7 @@ button,
     background-color: #fff;
     border: #e75605 solid 2px;
     padding: 3.5px 15px;
+    cursor: pointer;
 }
 
 .socials {
@@ -114,11 +110,13 @@ button,
     /* color: #fff; */
 }
 
+
 /* nav styles */
 
 nav {
     background-color: #fff;
     line-height: 29px;
+    z-index: 10;
 }
 
 nav ul {
@@ -148,13 +146,11 @@ nav a:focus {
 header  {
     background-color: #fff;
     height: 100vh;
-}
-
-.headerFlexContainer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
 }
 
 .headerImgContainer,
@@ -163,10 +159,15 @@ header  {
     height: 100%;
 }
 
+header img {
+    max-width: 100%;
+}
+
 .headerContentContainer {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .headerTextContainer {
@@ -177,9 +178,49 @@ header  {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 20%;
 }
 
 .socialsContainer i {
     padding: 0 0 20px 0;
+}
+
+/* main section styles */
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgContainer,
+.mainContent {
+    width: 50%;
+}
+
+.imgContainer img {
+    max-width: 100%;
+}
+
+.contentContainer {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.new .flexContainer {
+    flex-direction: row-reverse;
+}
+
+.experience .flexContainer {
+    flex-direction: row;
+}
+
+/* desserts section styles */
+.desserts {
+    background-color: #f4f4f4;
+}
+
+.desserts .wrapper {
+    display: flex;
 }

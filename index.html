@@ -17,75 +17,79 @@
 
 <body>
     <!-- nav -->
-    <nav>
-        <ul>
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
-    </nav>
+    <nav class="mainNav">
+        <div class="wrapper">
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div> <!-- wrapper end -->
+    </nav><!-- .mainNav end -->
 
     <!-- header -->
     <header>
-        <div class="headerFlexContainer">
-            <div class="headerImgContainer">
-                <img src="./assets/header-burger.png" alt="A tasty looking cheeseburger">
-            </div>
-            <div class="headerContentContainer">
-                <div class="headerTextContainer">
-                    <h1>Hangry <span>Tummy</span></h1>
-                </div>
-                <div class="socialsContainer">
-                    <a href="#" class="socials instagram" alt="link to Hangry Tummy Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="#" class="socials facebook" alt="link to Hangry Tummy Facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="socials snapchat" alt="link to Hangry Tummy Snapchat">
-                        <i class="fa-brands fa-snapchat"></i>
-                    </a>
-                    <a href="#" class="socials twitter" alt="link to Hangry Tummy Twitter">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </div> <!-- end of socials container -->
-            </div> <!-- end of header content container -->
-        </div> <!-- end of header flex container -->
+        <div class="headerImgContainer wrapper">
+            <img src="./assets/header-burger.png" alt="A tasty looking cheeseburger">
+        </div><!-- end of .headerImgContainer -->
+        <div class="headerContentContainer wrapper">
+            <div class="headerTextContainer">
+                <h1>Hangry <span>Tummy</span></h1>
+            </div><!-- end of .headerTextContainer -->
+            <div class="socialsContainer">
+                <a href="#" class="socials instagram" alt="link to Hangry Tummy Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="socials facebook" alt="link to Hangry Tummy Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="socials snapchat" alt="link to Hangry Tummy Snapchat">
+                    <i class="fa-brands fa-snapchat"></i>
+                </a>
+                <a href="#" class="socials twitter" alt="link to Hangry Tummy Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div> <!-- end of .socialsContainer -->
+        </div> <!-- end of .headerContentContainer -->
     </header>
 
     <!-- main -->
     <main>
         <!-- new to our menu -->
-        <section class="new">
-            <div class="newFlex">
-                <div class="wrapper newImgContainer">
+        <section class="new" id="new">
+            <div class="flexContainer">
+                <div class="imgContainer wrapper">
                     <img src="./assets/right-photo.jpg" alt="A tasty burger with a side of fries">
-                </div><!-- end of newImgContainer wrapper-->
-                <div class="wrapper newContentContainer">
-                    <h2>NEW TO OUR MENU</h2>
-                    <p>Lorem ipsum dolor sit amer, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quise interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
-                    <a href="#" class="readMore">READ MORE</a>
-                </div><!-- end of newContentContainer wrapper -->
-            </div><!-- end of newFlex container -->
+                </div><!-- end of .imgContainer wrapper-->
+                <div class="mainContent wrapper">
+                    <div class="contentContainer">
+                        <h2>NEW TO OUR MENU</h2>
+                        <p>Lorem ipsum dolor sit amer, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quise interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
+                        <a href="#" class="readMore">READ MORE</a>
+                    </div><!-- end of .contentContainer -->
+                </div><!-- end of .mainContent wrapper -->
+            </div><!-- end of .flexContainer -->
         </section>
 
         <!-- full experience -->
-        <section class="experience">
-            <div class="experienceFlex">
-                <div class="wrapper experienceImgContainer">
+        <section class="experience" id="experience">
+            <div class="flexContainer">
+                <div class="imgContainer wrapper">
                     <img src="./assets/left-photo.jpg" alt="aerial shot of fries, eggs benedict with a side salad, home fries and beans, and a bowl of french onion soup">
-                </div><!-- end of experienceImgContainer wrapper -->
-                <div class="wrapper experienceContentContainer">
-                    <h2>FULL EXPERIENCE</h2>
-                    <p>Lorem ipsum dolor sit amer, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend.Vestibulum consequat vestibulum felis pharetra luctus. Quise interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
-                    <a href="#" class="readMore">READ MORE</a>
-                </div><!-- end of experienceContentContainer wrapper -->
-            </div><!-- end of experienceFlex container -->
+                </div><!-- end of .imgContainer wrapper -->
+                <div class="mainContent wrapper">
+                    <div class="contentContainer">
+                        <h2>FULL EXPERIENCE</h2>
+                        <p>Lorem ipsum dolor sit amer, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend.Vestibulum consequat vestibulum felis pharetra luctus. Quise interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
+                        <a href="#" class="readMore">READ MORE</a>
+                    </div><!-- end of .contentContainer -->
+                </div><!-- end of .mainContent wrapper -->
+            </div><!-- end of .flexContainer -->
         </section>
 
         <!-- desserts -->
-        <section class="desserts">
+        <section class="desserts" id="desserts">
             <div class="wrapper">
                 <div class="dessertsImgContainer">
                     <img src="./assets/square-imege.jpg" alt="a rainbow of desserts">
@@ -139,7 +143,7 @@
         <footer>
             <div class="wrapper">
                 <!-- footer nav -->
-                <nav>
+                <nav class="footerNav">
                     <ul>
                         <li><a href="./index.html">HOME</a></li>
                         <li><a href="#">ABOUT</a></li>
