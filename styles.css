@@ -13,7 +13,7 @@ html {
 }
 
 .wrapper {
-    max-width: 1260px;
+    max-width: 1080px;
     width: 90%;
     margin: 0 auto;
 }
@@ -125,7 +125,6 @@ nav ul {
 
 .mainNav ul {
     margin-top: 50px;
-    margin-bottom: -70px;
 }
 
 nav li {
@@ -144,22 +143,22 @@ nav a:focus {
 /* HEADER STYLES */
 header  {
     background-color: #fff;
-    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
 }
 
 .headerImgContainer,
 .headerContentContainer {
     width: 50%;
-    height: 100%;
 }
 
 header img {
     max-width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
 .headerContentContainer {
@@ -184,6 +183,46 @@ header img {
 .socialsContainer i {
     padding: 0 0 20px 0;
 }
+
+/* for tablets */
+
+@media (max-width: 1330px) {
+    .socialsContainer {
+        position: fixed;
+        right: -500px;
+    }
+}
+
+@media (max-width: 1173px) {
+    header {
+        flex-direction: column-reverse;
+    }
+
+    .headerTextContainer {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        position: absolute;
+        top: 0px;
+        right: 20px;
+        justify-content: flex-end;
+    }
+
+    .headerImgContainer {
+        margin-top: 200px;
+        margin-left: -300px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (max-width: 795px) {
+    h1 {
+        font-size: 13rem;
+    }
+}
+
+
 
 /* MAIN STYLES */
 .flexContainer {
@@ -215,6 +254,15 @@ header img {
 /* EXPERIENCE SECTION STYLES */
 .experience .flexContainer {
     flex-direction: row;
+}
+
+/* for tablets */
+
+@media (max-width: 1000px) {
+    .new .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* DESSERTS SECTION STYLES */
@@ -274,7 +322,7 @@ header img {
 .gallery ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .gallery li {
@@ -326,15 +374,12 @@ input {
 }
 
 
-
-
-
 /* COPYRIGHT STYLES */
 .copyright {
     background-color: #1f2022;
     max-width: none;
     width: 100%;
-    padding: 1px 0;
+    padding: 3px 0;
 }
 
 .copyright p {
