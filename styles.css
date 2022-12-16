@@ -464,3 +464,39 @@ input {
     text-align: center;
     margin: 0;
 }
+
+/* for tablets */
+
+@media (max-width: 768px) {
+    .footerContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .subscribeContainer {
+        width: 100%;
+    }
+
+    .inputContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    input {
+        padding-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .inputContainer button {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
